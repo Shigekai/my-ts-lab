@@ -1,0 +1,24 @@
+{
+  "name": "alurabank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "lite-server --baseDir=app/dist",
+    "start": "concurrently \"npm run watch\" \"npm run server\"",
+    "compile": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "lite-server": "^2.6.1",
+    "pg-protocol": "^1.7.1",
+    "pg-types": "^4.0.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "undici-types": "^7.4.0"
+  }
+}
