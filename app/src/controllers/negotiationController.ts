@@ -1,3 +1,4 @@
+import { inspect } from '../decorators/inspectDecorator.js';
 import { performanceDecorator } from '../decorators/performanceDecorator.js';
 import { weekDay } from '../enums/weekDay.js';
 import { Negotiation } from '../models/negotiation.js';
@@ -22,6 +23,7 @@ export class NegotiationController {
         this._negotiationView.update(this._negotiations);
     }
 
+    @inspect()
     @performanceDecorator(true)
     public createNegotiation(): Negotiation | undefined {
         const negotiation = Negotiation.createNegotiation(
