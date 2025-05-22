@@ -46,5 +46,5 @@ export class NegotiationController {
     }
 }
 __decorate([
-    performanceDecorator()
+    performanceDecorator(true)
 ], NegotiationController.prototype, "createNegotiation", null);

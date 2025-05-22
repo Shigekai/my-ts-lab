@@ -22,7 +22,7 @@ export class NegotiationController {
         this._negotiationView.update(this._negotiations);
     }
 
-    @performanceDecorator()
+    @performanceDecorator(true)
     public createNegotiation(): Negotiation | undefined {
         const negotiation = Negotiation.createNegotiation(
             this._inputDate.value,
